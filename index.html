@@ -1,0 +1,22 @@
+<!-- VAMOS SUPOR QUE VOCÊ POSSUI O SEGUINTE CÓDIGO -->
+<select id="language">
+	<option value="pt" selected>Português</option>
+	<option value="en">English</option>
+	<option value="es">Español</option>
+</select>
+
+<!-- Existem duas informações relevantes que podemos recuperar neste caso.
+O valor do option selecionado
+O texto do option selecionado
+-->
+
+<!-- COMO OBTER O VALOR DE UM SELECT
+Para obter o valor de um select ou dropdown em HTML usando JavaScript puro, 
+primeiro selecionamos a tag select, neste caso pelo id, e depois pegamos o 
+valor selecionado através da propriedade selectedIndex. -->
+
+	var select = document.getElementById('language');
+	var value = select.options[select.selectedIndex].value;
+	console.log(value);
+
+<!-- Será impresso no console o valor "pt" (Ctrl + Shift + J para abrir o console). -->
